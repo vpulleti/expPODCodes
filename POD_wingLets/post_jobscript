@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/BL_w1_2D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/BL_w1_2D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/BL_w1_2D/"
+export prefix="BL_w1_2D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/BL_w1_2D/BL_w1_2D_"
+
+python3 -u POD_winglets_BL_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+

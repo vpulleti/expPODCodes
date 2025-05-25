@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/vpulleti/POD_wingLets/POD_winglets_LLJ_entrainment.py", line 56, in <module>
+    out = code_functions.bin_creation(ny,nx,num_tstp,prefix,ascii_path,bin_path,bin_name)
+  File "/home/vpulleti/POD_wingLets/code_functions.py", line 104, in bin_creation
+    with open(ascii_path+name,'r') as file:
+FileNotFoundError: [Errno 2] No such file or directory: '/scratch/bell/vpulleti/winglet_data/LLJ_POS_w2_7D/LLJ_POS_w2_7D000000.T000.D000.P000.H000.L.vec'

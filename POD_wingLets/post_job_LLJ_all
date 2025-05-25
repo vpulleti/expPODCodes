@@ -1,0 +1,78 @@
+#!/bin/bash
+#SBATCH -J post_LLJPOS
+#SBATCH -o post_LLJPOS.%j.out
+#SBATCH -e post_LLJPOS.%j.err
+#SBATCH -A highmem
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=1
+#SBATCH --exclusive
+#SBATCH -t 24:00:00
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w0_2D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w0_2D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w0_2D/"
+export prefix="LLJ_POS_w0_2D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w0_2D/LLJ_POS_w0_2D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w1_2D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w1_2D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w1_2D/"
+export prefix="LLJ_POS_w1_2D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w1_2D/LLJ_POS_w1_2D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w2_2D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w2_2D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w2_2D/"
+export prefix="LLJ_POS_w2_2D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w2_2D/LLJ_POS_w2_2D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w3_2D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w3_2D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w3_2D/"
+export prefix="LLJ_POS_w3_2D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w3_2D/LLJ_POS_w3_2D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w0_7D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w0_7D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w0_7D/"
+export prefix="LLJ_POS_w0_7D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w0_7D/LLJ_POS_w0_7D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w1_7D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w1_7D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w1_7D/"
+export prefix="LLJ_POS_w1_7D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w1_7D/LLJ_POS_w1_7D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w2_7D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w2_7D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w2_7D/"
+export prefix="LLJ_POS_w2_7D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w2_7D/LLJ_POS_w2_7D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
+
+
+export bin_path="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w3_7D/"
+export ascii_path="/scratch/bell/vpulleti/winglet_data/LLJ_POS_w3_7D/"
+export plot_path="/scratch/bell/vpulleti/winglet_data/plots/LLJ_POS_w3_7D/"
+export prefix="LLJ_POS_w3_7D"
+export bin_name="/scratch/bell/vpulleti/winglet_data/binary/LLJ_POS_w3_7D/LLJ_POS_w3_7D_"
+
+python3 -u POD_winglets_LLJ_entrainment.py $bin_path $ascii_path $plot_path $prefix $bin_name
